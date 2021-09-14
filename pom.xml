@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.abhisek.demo</groupId>
 	<artifactId>spring-jenkins-docker</artifactId>
-	<version></version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-jenkins-docker</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
