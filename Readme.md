@@ -21,6 +21,32 @@ INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
 INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 ```
 
+#### Urls below according to steps
+
+
+
+
+| Plugin | README | JSON Request|
+| ------ | ------ |-------------|
+| Register New User for Admin Role | http://localhost:8080/api/auth/register |{
+    "username": "Admin",
+    "firstName": "Admin1",
+    "lastName": "Admin2",
+    "phoneNumber": "1234567890",
+    "address": "India",
+    "dateOfBirth": "09/09/1988",
+    "email": "a@b.com",
+    "password": "123456",
+    "role": [
+        "admin"
+    ]
+}|
+| GitHub | [plugins/github/README.md][PlGh] |
+| Google Drive | [plugins/googledrive/README.md][PlGd] |
+| OneDrive | [plugins/onedrive/README.md][PlOd] |
+| Medium | [plugins/medium/README.md][PlMe] |
+| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+
 
 
 
@@ -94,14 +120,7 @@ NODE_ENV=production node app
 Dillinger is currently extended with the following plugins.
 Instructions on how to use them in your own application are linked below.
 
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+
 
 ## Development
 
